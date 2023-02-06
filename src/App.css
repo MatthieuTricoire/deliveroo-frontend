@@ -104,6 +104,10 @@ header {
   border-radius: 10px;
   color: #808484;
 }
+
+.meal:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .meal__txt {
   align-self: flex-start;
 }
