@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Stratos Deliveroo Web";
+  src: url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.eot");
+  src: url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.woff2")
+      format("woff2"),
+    url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.woff")
+      format("woff"),
+    url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.ttf")
+      format("truetype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/StratosDeliverooWeb-SemiBold.svg#StratosDeliverooWeb-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.eot");
+  src: url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.woff2")
+      format("woff2"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.woff") format("woff"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.ttf")
+      format("truetype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans-Bold.svg#IBMPlexSans-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.eot");
+  src: url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.woff2") format("woff2"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.woff") format("woff"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.ttf") format("truetype"),
+    url("../fonts/deliveroo-fonts_dfnsdf/IBMPlexSans.svg#IBMPlexSans")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

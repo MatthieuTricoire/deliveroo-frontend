@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import "./assets/css/fonts.css";
+@import "./assets/css/icons-font.css";
+
+/*? General  */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*? Utility  */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  display: flex;
+}
+
+.column {
   display: flex;
   flex-direction: column;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*? Header  */
+
+header {
+  height: 70px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header__logo {
+  width: 12%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*? Restaurant Header  */
+
+.restaurant-header {
+  height: 200px;
+  margin-block: 30px;
+}
+.col-left {
+  width: 70%;
+}
+.col-right {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.restaurant-header__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2e3333;
+  margin-bottom: 20px;
+}
+
+.restaurant-header__description {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #868a8a;
+  width: 90%;
+}
+
+/*? Restaurant Category  */
+
+.background {
+  background-color: hsl(179, 11%, 96%);
+}
+.category {
+  padding-top: 20px;
+}
+
+.category__title {
+  font-size: 24px;
+  color: #2e3333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/*? Restaurant Meal  */
+.meals {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.meal {
+  padding: 20px;
+  width: calc((100% - 20px) / 2);
+  background-color: white;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+  color: #808484;
+}
+.meal__txt {
+  align-self: flex-start;
+}
+
+.meal__title {
+  font-size: 19px;
+  color: #2e3333;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.meal__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #808484;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.meal__picture {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.meal__picture img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.meal__details {
+  align-items: center;
+}
+.meal__details__price {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.meal__details__pop {
+  font-size: 13px;
+  color: #ff8000;
+  font-weight: 800;
+  gap: 5px;
 }
