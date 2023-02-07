@@ -13,16 +13,16 @@ const Meal = ({ meal, orders, setOrders }) => {
     newTab.map((order) => {
       if (order.title) {
         order.quantity++;
-        setOrders(newTab);
+        return setOrders(newTab);
       } else {
         newTab.push({ title: meal.title, quantity: 1 });
-        setOrders(newTab);
+        return setOrders(newTab);
       }
     });
   };
 
   return (
-    <div onClick={addItemToCart} className="meal row">
+    <div onClick={addItemToCart(orders, setOrders)} className="meal row">
       <div className="meal__txt col-left column">
         <div className="meal__title">{meal.title}</div>
         <div className="meal__description">
