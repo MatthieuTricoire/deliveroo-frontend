@@ -1,7 +1,7 @@
 import imgLogo from "../assets/img/header-image.jpg";
 
 import Category from "./Category";
-const Restaurant = ({ data }) => {
+const Restaurant = ({ data, orders, setOrders }) => {
   return (
     <>
       <div className="restaurant-header row container">
@@ -20,7 +20,14 @@ const Restaurant = ({ data }) => {
       <main>
         {data.categories.map((category, index) => {
           if (category.meals.length > 1) {
-            return <Category category={category} key={index} />;
+            return (
+              <Category
+                category={category}
+                key={index}
+                orders={orders}
+                setOrders={setOrders}
+              />
+            );
           } else {
             return null;
           }

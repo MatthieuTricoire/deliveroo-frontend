@@ -1,4 +1,4 @@
-const Meal = ({ meal }) => {
+const Meal = ({ meal, orders, setOrders }) => {
   const cutString = (nbWord, txt) => {
     if (txt.length > nbWord) {
       const newTxt = txt.split(" ").slice(0, nbWord).join(" ") + " ...";
@@ -8,8 +8,21 @@ const Meal = ({ meal }) => {
     }
   };
 
+  const addItemToCart = () => {
+    const newTab = [...orders];
+    newTab.map((order) => {
+      if (order.title) {
+        order.quantity++;
+        setOrders(newTab);
+      } else {
+        newTab.push({ title: meal.title, quantity: 1 });
+        setOrders(newTab);
+      }
+    });
+  };
+
   return (
-    <div className="meal row">
+    <div onClick={addItemToCart} className="meal row">
       <div className="meal__txt col-left column">
         <div className="meal__title">{meal.title}</div>
         <div className="meal__description">
